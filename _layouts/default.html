@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Imaginary Mountain</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/common.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+
   <header>
   <h1>Imaginary Mountain</h1>
-  <nav>
-    <ul>
-      <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-      <li><a href="{{site.baseurl}}/about.html">About</a></li>
-    </ul>
-  </nav>
+  {% include nav.html %}
   </header>
   {{content}}
 
+  <footer>
+    {% include nav.html %}
+    <p>© 2016 Jesse Lawson</p>
+  </footer>
   </body>
 </html>
